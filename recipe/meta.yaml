@@ -1,6 +1,6 @@
 {% set name = "perl-mojolicious" %}
-{% set version = "8.71" %}
-{% set sha256 = "a28f2142e733a02a756efb0ea8176ad5f8d32a142ded1476f38059961364834a" %}
+{% set version = "9.0" %}
+{% set sha256 = "34b42fc4aa02ac4264426759de0dc90763e4aae6b656c6f7db712f1c38f3578a" %}
 
 package:
   name: {{ name }}
@@ -77,7 +77,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Real-time web framework'
+  summary: Real-time web framework
 extra:
   recipe-maintainers:
     - khaled196
