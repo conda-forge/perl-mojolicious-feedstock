@@ -1,6 +1,6 @@
 {% set name = "perl-mojolicious" %}
 {% set version = "9.0" %}
-{% set sha256 = "34b42fc4aa02ac4264426759de0dc90763e4aae6b656c6f7db712f1c38f3578a" %}
+{% set sha256 = "1477f33f777a2f167d0e19cda1ad7782d296c21b2b9cd04f8b49ea706a7c2f3b" %}
 
 package:
   name: {{ name }}
@@ -15,12 +15,12 @@ build:
   run_exports:
     weak:
       - {{ name }} ={{ version }}
+  skip: true  # [win]
 
 requirements:
   host:
     - perl =>5.32
     - make  # [not win]
-    - m2-make  # [win]
 
   run:
     - perl =>5.32
@@ -33,7 +33,7 @@ test:
     - Mojolicious::Command::Author::cpanify
     - Mojolicious::Command::Author::generate
     - Mojolicious::Command::Author::generate::app
-#    - Mojolicious::Command::Author::generate::dockerfile # only for version 9 and above
+    - Mojolicious::Command::Author::generate::dockerfile
     - Mojolicious::Command::Author::generate::lite_app
     - Mojolicious::Command::Author::generate::makefile
     - Mojolicious::Command::Author::generate::plugin
