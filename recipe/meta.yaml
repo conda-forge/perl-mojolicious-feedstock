@@ -75,7 +75,8 @@ test:
 about:
   home: https://mojolicious.org
   license: Artistic-2.0
-  license_file: LICENSE.txt
+  license_file: 
+    - {{ environ["PREFIX"] }}/man/man1/perlartistic.2
   summary: Real-time web framework
 extra:
   recipe-maintainers:
