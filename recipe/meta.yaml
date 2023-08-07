@@ -74,8 +74,7 @@ test:
 
 about:
   home: https://mojolicious.org
-  license: MIT
-  license_family: MIT
+  license: Artistic-2.0
   license_file: LICENSE.txt
   summary: Real-time web framework
 extra:
