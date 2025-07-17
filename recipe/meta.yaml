@@ -79,4 +79,5 @@ about:
   summary: Real-time web framework
 extra:
   recipe-maintainers:
+    - conda-forge/perl-packagers
     - khaled196
