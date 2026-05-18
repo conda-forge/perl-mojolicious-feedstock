@@ -1,6 +1,6 @@
 {% set name = "perl-mojolicious" %}
-{% set version = "9.43" %}
-{% set sha256 = "9f82ec3971d8c59f231760ade27c0f4f12f6ca72b1a56bce2ac9c625c5be857a" %}
+{% set version = "9.45" %}
+{% set sha256 = "e0e40e990edd7d1ee39ad35dfd06732c1852a7e4b435cc737875c0c9e5cf9cd7" %}
 
 package:
   name: {{ name }}
