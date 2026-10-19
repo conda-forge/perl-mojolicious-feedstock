@@ -12,15 +12,15 @@ source:
 
 build:
   number: 0
+  noarch: generic
   run_exports:
     weak:
       - {{ name }} ={{ version }}
-  skip: true  # [win]
 
 requirements:
   host:
     - perl =>5.32
-    - make  # [not win]
+    - make
 
   run:
     - perl =>5.32
