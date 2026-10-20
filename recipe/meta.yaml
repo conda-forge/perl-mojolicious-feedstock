@@ -1,6 +1,6 @@
 {% set name = "perl-mojolicious" %}
-{% set version = "9.50" %}
-{% set sha256 = "bfd80e52e7411f11396ab676d40f73557de43e7b0e48fd9bbd103ba0e2135e12" %}
+{% set version = "9.51" %}
+{% set sha256 = "f163fde284227052fef867cfc83383c7dd3b7549f96def34ce6cecd89cdbbc3e" %}
 
 package:
   name: {{ name }}
@@ -12,15 +12,15 @@ source:
 
 build:
   number: 0
+  noarch: generic
   run_exports:
     weak:
       - {{ name }} ={{ version }}
-  skip: true  # [win]
 
 requirements:
   host:
     - perl =>5.32
-    - make  # [not win]
+    - make
 
   run:
     - perl =>5.32
